@@ -1,0 +1,237 @@
+/*Design général*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+}
+
+/*Design topo*/
+h1{
+	color: white;
+	font-size: 50px;
+	margin-left: 20px;
+	font-family: 'Anton', sans-serif;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	margin-right: 20px;
+	font-size: 25px;
+	font-family: 'Anton', sans-serif;
+}
+
+nav{
+	margin-right: 10px;
+}
+
+h2{
+	font-size: 50px;
+	color: black ; 
+	text-align: center;
+	margin-top: 3%;
+	font-family: 'Anton', sans-serif;
+}
+
+h3{
+	font-size: 30px;
+	color: black ; 
+	text-align: center;
+	margin-top: 9%;
+	font-family: 'Anton', sans-serif;
+}
+
+/*Menu*/
+header{
+	width: 100%;
+	height: 10vh;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	box-shadow: 0px 0px 2vw black;
+}
+.menuFantome{
+	width: 100vw;
+	height: 10vh;
+}
+
+label{
+	display: none;
+	color: white;
+	font-size: 40px
+}
+
+#switch {
+	display: none;
+} 
+
+nav a:hover{
+	background-color: grey;
+}
+
+@media(max-width: 800px){
+	header{
+		display: block;
+	}
+
+	h1{
+		float: left;
+	}
+
+	label{
+		display: block;
+		float: right;
+	}
+	nav{
+		display: none;
+	}
+	
+	#switch:checked + nav{
+		display: block;
+		clear: both;
+	}
+
+	nav a{
+		width: 100%;
+		display: block;
+		text-align: center;
+		background-color: white;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 4px solid black;
+	}
+
+	header{
+		display: block;
+	}
+	
+	a{
+		background-color: black;
+		text-align: center;
+		margin-right: 0px;
+		padding: 10px;
+		border-bottom: 2px solid white;
+	}
+	a{
+		color: black;
+	}
+}
+
+/*Colonne Central*/
+.colonnecentral{
+	width: 80vw;
+	min-height: 80vh;
+	background: white;
+	margin-left: 10%;
+	box-shadow: 0px 0px 50vW black;
+
+}
+@media(max-width: 1000px){
+	
+	.colonnecentral{
+		width: 100vw;
+		margin-left: 0px;
+	}
+}
+
+/*Section 1*/
+.Drapeau-Américain{
+	width: 80%;
+	margin-left: 10%
+}
+
+/*Section 2*/
+.section2{
+	width: 100%;
+	min-height : 50vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.photoettexte2{
+	width: 30vw;
+	text-align: center;
+}
+
+.photologomarque{
+	width: 65%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 2vw black;
+}
+
+.nommarque{
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Anton', sans-serif;
+}
+
+@media(max-width: 900px){
+	
+	.section2{
+		flex-direction: column;
+	
+	}
+	.photoettexte2{
+		width: 50vw;
+		margin: 5vw;
+		margin-bottom: 5vw;
+	}
+
+	.photologomarque{
+		width: 50vw;
+	}
+}
+
+/*Section 3*/
+.section3{
+	width: 100%;
+	min-height : 60vh;
+}
+
+.photoettexte3{
+	display: flex;
+	height: auto;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 40px;
+}
+
+.photomodele{
+	width: 30%;
+	border: 2px solid black;
+	margin-bottom: 3%;
+	margin-left: 3%;
+}
+
+.textedemodele{
+	font-size: 25px;
+	width: 70%;
+	margin-left: 3%;
+	font-family: 'Anton', sans-serif;
+}
+@media(max-width: 800px){
+	.section3{
+		flex-direction: column;
+	}
+}
+
+/* Footer */
+footer{
+	width: 100vw;
+	height: 10vh;
+	background-color: black;
+	display: flex;             
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer a{
+	color: white;
+	text-decoration: none;
+    margin: 5px;
+}
